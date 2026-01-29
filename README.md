@@ -1,1 +1,1 @@
-# waelthbridge-agent-framework
+# wealthbridge-agent-framework
