@@ -1,0 +1,10 @@
+packages:
+  - apps/*
+  - services/*
+  - packages/*
+
+ignoredBuiltDependencies:
+  - '@scarf/scarf'
+  - esbuild
+  - sharp
+  - unrs-resolver
