@@ -1,0 +1,41 @@
+{
+  "name": "wealthbridge-agent-framework",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Sovereign agent framework for InfluWealth Quantum Labs",
+  "author": "Victor Essel <victor@influwealth.com>",
+  "license": "PROPRIETARY",
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "packages/mcp-servers/*",
+    "packages/capsules/*"
+  ],
+  "scripts": {
+    "bootstrap": "node scripts/bootstrap/index.js",
+    "dev": "pnpm -r --parallel run dev",
+    "build": "pnpm -r run build",
+    "test": "pnpm -r run test",
+    "test:watch": "pnpm -r run test:watch",
+    "lint": "pnpm -r run lint",
+    "type-check": "pnpm -r run type-check",
+    "clean": "pnpm -r run clean && rm -rf node_modules",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
+    "create:capsule": "node scripts/create-capsule.js",
+    "create:mcp": "node scripts/create-mcp-server.js"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@typescript-eslint/eslint-plugin": "^6.19.0",
+    "@typescript-eslint/parser": "^6.19.0",
+    "eslint": "^8.56.0",
+    "prettier": "^3.2.4",
+    "typescript": "^5.3.3",
+    "vitest": "^1.2.0"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "packageManager": "pnpm@8.15.0"
+}
