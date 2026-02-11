@@ -1,0 +1,34 @@
+{
+  "node": "S23",
+  "type": "mobile",
+  "os": "Android 16 (Termux)",
+  "roles": [
+    "UI host",
+    "light agent execution",
+    "capsule testing",
+    "MCP server development",
+    "education + onboarding"
+  ],
+  "capabilities": {
+    "ui": ["mcp-ui"],
+    "agents": ["local-test-agent"],
+    "capsules": ["local-test-capsule"],
+    "network": {
+      "local": true,
+      "remote": true
+    }
+  },
+  "hardware": {
+    "cpu": "Snapdragon",
+    "ram": "8GB",
+    "gpu": "Adreno (no CUDA)",
+    "storage": "variable"
+  },
+  "links": {
+    "spectre": "pending",
+    "elitebook": "pending",
+    "a7-lite": "pending",
+    "ionos": "pending",
+    "openstack": "pending"
+  }
+}
